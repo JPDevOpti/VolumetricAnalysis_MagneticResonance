@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* Un fondo claro para la página */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar tabla en la página */
+}
+
+h1 {
+    color: #282c34; /* Título oscuro */
+    margin-bottom: 20px;
+}
+
+.demographic-table {
+    border-collapse: collapse; /* Une los bordes */
+    width: 80%; /* Ancho de la tabla, ajusta según necesites */
+    max-width: 700px; /* Máximo ancho */
+    margin: 20px 0;
+    background-color: #282c34; /* Fondo oscuro como en la imagen */
+    color: #abb2bf; /* Texto claro (grisáceo) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    overflow: hidden; /* Para que el radius afecte a los bordes internos */
+}
+
+.demographic-table th,
+.demographic-table td {
+    border: 1px solid #4e5461; /* Bordes internos más oscuros */
+    padding: 10px 12px; /* Espaciado interno */
+    text-align: center; /* Centrar texto por defecto */
+}
+
+.demographic-table thead th {
+    background-color: #3a404b; /* Fondo ligeramente diferente para el encabezado */
+    color: #ffffff; /* Texto blanco para encabezado */
+    font-weight: bold;
+    border-bottom: 2px solid #61afef; /* Línea azul debajo del encabezado */
+}
+
+/* Alinear la primera columna (Variable) a la izquierda */
+.demographic-table tbody td:first-child {
+    text-align: left;
+    font-weight: normal; /* Asegurar que no esté en negrita si el navegador lo hace */
+    padding-left: 15px; /* Un poco más de espacio a la izquierda */
+}
+
+/* Estilo alterno para filas (opcional, mejora legibilidad) */
+/* .demographic-table tbody tr:nth-child(even) {
+    background-color: #313640;
+} */
+
+/* Hover effect (opcional) */
+.demographic-table tbody tr:hover {
+    background-color: #3f4551;
+}
